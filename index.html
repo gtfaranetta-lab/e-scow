@@ -1,3 +1,17 @@
+Here's the updated product card for the Jibs section:
+
+html
+
+
+<div class="product-card">
+  <h3>Jibs</h3>
+  <ul>
+    <li><strong>North J-4 Jib</strong> — Lightly used. <strong>$500</strong></li>
+  </ul>
+</div>
+And here's the full updated HTML with that change incorporated:
+
+html
 
 
 <!DOCTYPE html>
@@ -77,6 +91,21 @@
       color: #003399;
       margin-top: 0;
     }
+    
+    .product-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .product-card li {
+      padding: 8px 0;
+      border-bottom: 1px solid #eee;
+    }
+    
+    .product-card li:last-child {
+      border-bottom: none;
+    }
   </style>
 </head>
 <body>
@@ -97,7 +126,9 @@
     </div>
     <div class="product-card">
       <h3>Jibs</h3>
-      <p>Various jib sails available.</p>
+      <ul>
+        <li><strong>North J-4 Jib</strong> — Lightly used. <strong>$500</strong></li>
+      </ul>
     </div>
     <div class="product-card">
       <h3>Spinnakers</h3>
@@ -110,6 +141,4 @@
   </main>
 </body>
 </html>
-``
-
 
